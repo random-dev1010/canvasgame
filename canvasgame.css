@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family : sans-serif;
+}
+html , body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+canvas{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+}
+.asset{
+    display: none;
+}
+.ui{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    position: absolute;
+    background-image: linear-gradient(45deg,rgba(221, 25, 221, 0.5),rgba(255,255,255,0),rgba(221, 25, 221, 0.5));
+    align-items: center;
+}
+h1{
+    text-align: center;
+    width: 100vw;
+    font-size: 60px;
+    color: aliceblue;
+    margin: 40px;
+    margin-bottom: 50px;
+}
+span {
+    display: inline-flex;
+    height: 100px;
+    width:100px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 254, 254, 0.25);
+    border-radius: 5px;
+}
+span img {
+    width: 100px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 170px;
+}
+.container h1 {
+    font-size: 30px;
+    display: inline;
+    margin-top: 0;
+}
+.controls{
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.char{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+kbd {
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid white;
+}
+p{
+    color: aliceblue;
+    font-size: 20px;
+    margin: 30px;
+}
+label{
+    color: aliceblue;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+select{
+    height: 40px;
+    width: 200px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(223, 38, 213,0.65);
+    font-size: 20px;
+    color: aliceblue
+}
+input{
+    height: 40px;
+    width: 200px;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(223, 38, 213,0.65);
+    font-size: 20px;
+    color: aliceblue;
+}
+.scoreboard{
+    position: absolute; 
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(220, 20, 60, 0.301);
+    padding: 10px;
+    border-radius: 10px;
+    gap: 30px;  
+    height: 30px;
+    width: 30%;
+    left: calc(100vw - 40px - 30%);
+    color: rgb(252, 240, 82); 
+}
+.scoreboard div {
+    display: inline-block;
+    font-weight: bold;
+}
+.overui{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    height: fit-content;
+    width: 40%;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 25px;
+}
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+button {
+    height: 45px;
+    width: 180px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(48, 48, 182);
+    color: aliceblue;
+}
+.projectile{
+    height: 10px;
+    width: 10px;
+}
+.ammo{
+    color: white;
+}

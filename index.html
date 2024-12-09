@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./canvasgame.css">
+    <title>CANVAS GAME</title>
+</head>
+<body>
+<div class="ui">
+    <h1>WELCOME</h1>
+    <div class="container">
+    <div class="char"><h1>CARACTERS / SHIPS</h1>
+    <span class="ships1"><img src="./assets/playerShips/playership1.png" class="shipcards"></span>
+    <span class="ships2"><img src="./assets/playerShips/playership2.png" class="shipcards"></span>
+    <span class="ships3"><img src="./assets/playerShips/playership3.png" class="shipcards"></span>
+    <span class="ships4"><img src="./assets/playerShips/playership4.png" class="shipcards"></span>
+    <span class="ships5"><img src="./assets/playerShips/playership5.png" class="shipcards"></span></div>
+    <div class="controls">
+        <h1>Controls:</h1>
+        <p>Press <kbd>W</kbd> or <kbd>ArrowUp</kbd> to go up.</p>
+        <p>Press <kbd>S</kbd> or <kbd>ArrowDown</kbd> to go down.</p>
+        <p>Press <kbd>D</kbd> or <kbd>ArrowRight</kbd> to shoot.</p>
+    </div>
+    </div>
+    <label for="ships">Choose your character:</label>
+    <select name="ships" id="ships">
+        <option value="pship1">Ship 1</option>
+        <option value="pship2">Ship 2</option>
+        <option value="pship3">Ship 3</option>
+        <option value="pship4">Ship 4</option>
+        <option value="pship5">Ship 5</option>
+      </select>
+      <input type="submit" value="Play" onclick="start();">
+</div>
+<div class="scoreboard">
+    <div class="score"></div>
+    <div class="ammo">
+    </div>
+</div>
+<div class="overui">
+    <h2>GAME OVER</h2><br>
+    <h2 class="overscore"></h2><br>
+    <h3>Go back to the menu:</h3><br>
+    <button onclick="window.location.reload()">Replay</button>
+</div>
+<canvas id="canvas"></canvas>
+<div class="asset">
+    <img src="./assets/playerShips/playership1.png" class="playership1">
+    <img src="./assets/playerShips/playership2.png" class="playership2">
+    <img src="./assets/playerShips/playership3.png" class="playership3">
+    <img src="./assets/playerShips/playership4.png" class="playership4">
+    <img src="./assets/playerShips/playership5.png" class="playership5">
+    <img src="./assets/playerShips/projectile1.png" class="projectile1">
+    <img src="./assets/playerShips/projectile2.png" class="projectile2">
+    <img src="./assets/playerShips/projectile4.png" class="projectile3">
+    <img src="./assets/playerShips/projectile5.png" class="projectile4">
+    <img src="./assets/playerShips/projectile3.png" class="projectile5">
+    <img src="./assets/enemyShips/enemyship1.png" class="enemyship1">
+    <img src="./assets/enemyShips/enemyship2.png" class="enemyship2">
+    <img src="./assets/enemyShips/enemyship3.png" class="enemyship3">
+</div>
+</body>
+<script src="./canvasgame.js"></script>
+</html>
